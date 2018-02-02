@@ -1,0 +1,24 @@
+Callum Jago
+CAP4730
+February 10, 2017
+Project 2 Report
+1. Ray Tracing Results
+Lambertian Shading
+ 
+
+Phong Shading
+ 
+
+
+
+2. Approach for Special Effect
+	For this project I attempted to implement shadows as a special effect. My approach for this was once an intersection was detected, I constructed a ray with its origin at the surface of the object and its direction pointing towards a light source. I then passed that ray into my intersection function and if it returned a hit that meant that the ray intersected an object between the surface and the light source, so that point on the surface should be in shadow. 
+
+3. Difficulties
+	The largest difficulty that I encountered cam from calculating intersections for triangles. I also encountered difficulties getting shadows to work. 
+
+4. Instruction for compiliation
+Run make in src/mainsrc
+./prog2_raytracer n
+where n=1 for lambertian and n=2 for phong
+
